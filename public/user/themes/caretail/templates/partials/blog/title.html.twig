@@ -1,0 +1,14 @@
+{% set title_level = title_level ?: 'h2' %}
+{% set pageURL = page.url | postcaredate %}
+
+{% if page.header.link %}
+    {% set pageLink = page.header.link | postcaredate %}
+    <{{ title_level }} class="p-name mt-1">
+        {% if page.header.continue_link is not same as(false) %}
+        <a href="{{ pageURL }}"><i class="fa fa-angle-double-right u-url"></i></a>
+        {% endif %}
+        <a href="{{ pageLink }}" class="u-url">{{ page.title }}</a>
+    </{{ title_level }}>
+{% else %}
+    <{{ title_level }} class="p-name mt-1"><a href="{{ pageURL }}" class="u-url">-- {{ page.title }}</a></{{ title_level }}>
+{% endif %}

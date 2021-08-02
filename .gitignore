@@ -1,0 +1,10 @@
+# List of folders and files to exclude
+.idea
+public/backup/*
+public/cache/*
+public/logs/*
+public/tmp/*
+public/user/accounts/*
+public/user/data/*
+node_modules
+.DS_Store

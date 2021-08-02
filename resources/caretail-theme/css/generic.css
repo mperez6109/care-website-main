@@ -1,0 +1,56 @@
+.generic-hero {
+  @apply mt-20 mb-24 flex justify-between py-12; }
+  .generic-hero > div {
+    width: 48%; }
+  .generic-hero h1 {
+    @apply text-care-motion pb-8 mb-8 relative; }
+    .generic-hero h1:after {
+      @apply block bg-care-grace absolute;
+      content: '';
+      height: 3px;
+      width: 40px;
+      bottom: 0px; }
+  .generic-hero p {
+    @apply mb-6; }
+
+.section.generic-page .container {
+  @apply flex; }
+.section.generic-page nav {
+  width: 25%; }
+  .section.generic-page nav .nav-title {
+    @apply text-care-boots pb-4 mb-4 relative; }
+    .section.generic-page nav .nav-title:after {
+      @apply block bg-care-grace absolute;
+      content: '';
+      height: 3px;
+      width: 20px;
+      bottom: 0px; }
+  .section.generic-page nav li {
+    @apply mb-4 text-lg; }
+    .section.generic-page nav li a {
+      @apply text-care-motion; }
+.section.generic-page .generic-page-content {
+  width: 70%;
+  margin-left: 2rem; }
+  .section.generic-page .generic-page-content section {
+    @apply mb-8; }
+    .section.generic-page .generic-page-content section h3 {
+      @apply text-xl text-care-motion mb-4; }
+    .section.generic-page .generic-page-content section.has-image {
+      display: flex; }
+      .section.generic-page .generic-page-content section.has-image > div:first-child {
+        width: 200px; }
+        .section.generic-page .generic-page-content section.has-image > div:first-child img {
+          width: 200px;
+          max-width: 200px; }
+        .section.generic-page .generic-page-content section.has-image > div:first-child + div {
+          margin-left: 40px; }
+          .section.generic-page .generic-page-content section.has-image > div:first-child + div ul {
+            padding-left: 20px; }
+  .section.generic-page .generic-page-content footer {
+    @apply flex bg-gray-100 p-8 mb-24; }
+    .section.generic-page .generic-page-content footer > div:last-child {
+      width: 40%;
+      text-align: right; }
+
+/*# sourceMappingURL=generic.css.map */

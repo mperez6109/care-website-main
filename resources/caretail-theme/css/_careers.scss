@@ -1,0 +1,128 @@
+.careers-hero {
+  height: 350px;
+  background: url(/images/careers/careers-hero.jpeg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#lever-jobs-filter {
+  margin: 2rem 0;
+
+  option:disabled {
+    color: -internal-light-dark(graytext, rgb(138, 29, 29));
+  }
+
+  select {
+    /* styling */
+    background-color: white;
+    border: thin solid #dadada;
+    border-radius: 4px;
+    display: inline-block;
+    font: "Open Sans";
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+
+    margin: 0 0.5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  select.input-container {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+
+
+    @media (max-width: 720px) {
+      display: block;
+      width: 90%;
+      margin: 0.5rem 0;
+      display: flex;
+    }
+  }
+}
+
+
+#lever-jobs-container,
+.filters-container + .list {
+  border-top: 1px solid #dadada;
+  margin-top: 2rem;
+}
+
+#lever-no-results {
+  padding: 1rem -0px;
+  border-bottom: 1px solid #dadada;
+}
+
+.current-jobs {
+  width: 90%;
+  max-width: 900px;
+  margin: 0px auto;
+
+  ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  li.lever-job {
+    border-bottom: 1px solid #dadada;
+    padding: 1.5rem 0;
+    margin: 0px;
+  }
+
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+
+    div a {
+      color: #333;
+      font-family: palatino, serif;
+      font-size: 1.25rem;
+      display: block;
+      line-height: 1.5;
+    }
+
+    div span {
+      color: #666;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.apply-now-btn {
+  @apply border-2 border-solid border-care-motion py-1 px-4 transition-all;
+  border-radius: 50px;
+  text-align: center;
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+  flex-shrink: 0;
+  font-size: 1rem;
+  margin-left: 1rem;
+
+  &:hover {
+    @apply bg-care-grace;
+    text-decoration: none;
+  }
+}
+
+.lever-team-title {
+  display: none;
+}
+
+.lever-department-title {
+  @apply text-care-motion mt-8 text-sm;
+}
+

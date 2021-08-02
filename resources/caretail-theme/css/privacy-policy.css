@@ -1,0 +1,6 @@
+.privacy-policy h2, .privacy-policy a {
+  @apply text-care-motion; }
+.privacy-policy hr {
+  @apply my-4; }
+
+/*# sourceMappingURL=privacy-policy.css.map */

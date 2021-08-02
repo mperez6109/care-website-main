@@ -1,0 +1,103 @@
+title: Blog Post
+
+rules:
+  slug:
+    pattern: '202\d\-\d{1,2}-\d{1,2}-[a-zA-Zа-яA-Я0-9_\-]+'
+    min: 10
+    max: 400
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        blogpost:
+          type: tab
+          title: Blog Post
+
+          fields:
+
+            spacer0:
+              type: spacer
+              text: '<br>'
+            columns:
+              type: columns
+              fields:
+                column1:
+                  type: column
+                  fields:
+                    header.title:
+                      type: text
+                      label: Post Title
+                      placeholder: e.g. Latest Blog Post
+                      validate:
+                        required: true
+                    header.subtitle:
+                      type: text
+                      label: Post Sub-Title
+                      placeholder: supports and shows below the title
+                    header.slug:
+                      type: post-slug
+                      label: Post URL
+                      help: The slug variable allows you to specifically set the page's portion of the URL. Please don't change it once published
+                      description: must be in in `YYYY-m-d-blog-post-title` format
+                      validate:
+                        required: true
+                        message: The Post URL must start with 202X-m-d-
+                        rule: slug
+                column2:
+                  type: column
+                  fields:
+                    header.published:
+                      type: toggle
+                      toggleable: true
+                      label: PLUGIN_ADMIN.PUBLISHED
+                      help: PLUGIN_ADMIN.PUBLISHED_HELP
+                      highlight: 1
+                      size: medium
+                      options:
+                        1: PLUGIN_ADMIN.YES
+                        0: PLUGIN_ADMIN.NO
+                      validate:
+                        type: bool
+                    header.date:
+                      type: datetime
+                      label: URL/Sort Date
+                      help: This date variable affects the sorting of the blog posts and it's also used for automatically generating the Post URL
+                      default: now
+                      validate:
+                        required: true
+                    header.publish_date:
+                      type: datetime
+                      label: PLUGIN_ADMIN.PUBLISHED_DATE
+                      help: PLUGIN_ADMIN.PUBLISHED_DATE_HELP
+                      default: now
+                      validate:
+                        required: true
+            spacer1:
+              type: spacer
+              text: '<br>'
+
+            content:
+              type: markdown
+              rows: 20
+              validate:
+                type: textarea
+
+            spacer2:
+              type: spacer
+              text: '<br>'
+
+            media_title:
+              type: section
+              title: Media
+              underline: true
+
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: true
+              preview_image: true
+

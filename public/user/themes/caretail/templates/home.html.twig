@@ -1,0 +1,177 @@
+{% extends 'partials/base.html.twig' %}
+
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+
+
+{% block content %}
+<div id="home-page-hero"></div>
+<section class="section home-hero">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left">
+            <h1 class="my-4 text-4xl font-bold leading-tight">Your Site Partner for Decentralized Clinical Trials</h1>
+            <p class="leading-normal mb-8">Plug-and-play decentralization for any clinical trial</p>
+
+
+            <a href=" https://web2.careaccess.com/contact-us" class="btn primary">Contact Us</a>
+
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-1/2 py-6 text-right">
+            <img class="w-full md:w-4/5 z-50 inline-block" src="/images/home/hero-msv.png">
+        </div>
+
+    </div>
+</section>
+
+<div id="article-call-out"></div>
+<section class="section home-article bg-boots">
+    <div class="container mx-auto">
+        <h2 class="text-care-ivory">"We are operating like one big site, and that is a game-changer."</h2>
+        <p class="text-care-white text-xl mt-2">Eli Lilly and Company</p>
+        <p class="text-care-grace">Clinical Systems Director</p>
+
+        <article class="callout">
+            <div class="col text-white">Lilly and Care Access take trial directly to patients in first-of-its kind decentralized, mobile trial.</div>
+            <div class="col text-right">
+                <a href="#" class="btn">Read Full Article</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<div id="home-featured-news"></div>
+<section class="section home-stats-and-featured-news">
+    <div class="container mx-auto">
+        <h2 class="text-3xl text-center text-care-motion max-w-screen-md mx-auto">The world’s leading Decentralized Research Organization (DRO)</h2>
+        <p class="mt-4 text-base text-center text-care-dusk max-w-screen-md mx-auto grace-after">Our work spans <strong>20 therapeutic areas.</strong></p>
+        <div class="home-page-stats">
+            <div class="stat">
+                150+
+                <span>“Pop-Up” Research Sites Created</span>
+            </div>
+            <div class="stat">
+                4,000+
+                <span>Patients Enrolled</span>
+            </div>
+            <div class="stat">
+                60,000+
+                <span>Home Visits Completed</span>
+            </div>
+        </div>
+        <div class="news-grid">
+            <article>
+                <img src="/images/home/astrazenica-article-img.png" />
+                <p class="meta">CareAccess - January 26, 2021</p>
+                <a href="#">
+                    Care Access Research Collaborates with AstraZeneca on Phase III Clinical Trial for COVID-19 Long-Acting Antibody Combination
+                    <span>Read Article »</span>
+                </a>
+            </article>
+            <article>
+                <img src="/images/home/trial-site-article-img.png" />
+                <p class="meta">Trial Site News - October 12, 2020</p>
+                <a href="#">
+                    Lilly, NIAID & Care Access Research Transform How Studies Done to Reach Nursing Homes During COVID-19 Pandemic
+                    <span>Read Article »</span>
+                </a>
+            </article>
+            <article>
+                <img src="/images/home/phosphorus-article-img.png" />
+                <p class="meta">CareAccess - July 2, 2020</p>
+                <a href="#">
+                    Care Access Research Validation Study of COVID-19 At-Home Saliva Test by Phosphorus is Granted EUA by FDA 
+                    <span>Read Article »</span>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div id="home-popup-sites"></div>
+<section class="section home-popup pb-24 px-4">
+    <div class="container mx-auto">
+        <div class="col overlap">
+            <div>
+                <h2>Add “Pop-Up” Sites to Your Trial</h2>
+                <p>Add <em>Sites On Demand</em>™ to your trial anytime, alongside other research sites. And when the traditional site model simply does not work for your trial design, we can decentrally implement 100% of your clinical trial to enroll participants wherever they are.</p>
+            </div>
+        </div>
+        <div class="col overlap home-popup-list">
+            <div class="home-popup-list-item">
+                <div class="image-left">
+                    <img src="/images/home/care-facility-icon.png" />
+                </div>
+                <div class="content-right">
+                    <h3>Sites On Demand™</h3>
+                    <p>Extend your reach to new clinics. Tap into new patient populations.</p>
+                    <a href="#" class="btn primary">Learn More</a>
+                </div>
+            </div>
+            <div class="home-popup-list-item">
+                <div class="image-left">
+                    <img src="/images/home/msv-icon.png" />
+                </div>
+                <div class="content-right">
+                    <h3>Mobile Sites On Demand™</h3>
+                    <p>Take your clinical trial to the patient anywhere. Deliver any level of care.</p>
+                    <a href="#" class="btn primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="home-join-our-team"></div>
+<section class="section join-our-team">
+    <div class="container sm mx-auto">
+        <div class="bg-white p-12 text-center shadow-xl">
+            <h2 class="text-care-motion pb-4">Join Our Team</h2>
+            <p>You can be a part of the solution.<br/>
+                Help save lives and make history.</p>
+            <div class="button-row">
+                <a href="#" class="btn green-border">Job Opportunities</a>
+                <a href="#" class="btn green-border">Our COVID-19 Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="home-customer-perspectives"></div>
+<section class="section customer-perspectives my-12">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div><img src="/images/home/home-patients.png"/></div>
+                <h3 class="text-care-motion my-4">Participate in a Clinical Trial</h3>
+                <p>Participating in a clinical trial is a viable care option. Explore everything from what to expect and reasons to volunteer to potential benefits and risks.</p>
+                <a href="#" class="text-care-motion my-4 inline-block">Patients Start Here</a>
+            </div>
+            <div>
+                <div><img src="/images/home/home-physicians.png"/></div>
+                <h3 class="text-care-motion my-4">Become an Investigator</h3>
+                <p>Expand your practice with cutting-edge research. Our 100% funded turn-key programs give you on-site support and everything else needed to succeed.</p>
+                <a href="#" class="text-care-motion my-4 inline-block">Physicians Start Here</a>
+            </div>
+            <div>
+                <div><img src="/images/home/home-sponsors.png"/></div>
+                <h3 class="text-care-motion my-4">Enroll Trials Faster</h3>
+                <p>Choose from our existing high-performance sites with expert PIs, and rapidly build custom sites dedicated to your trials with our Sites On Demand™ service.</p>
+                <a href="#" class="text-care-motion my-4 inline-block">Sponsors Start Here</a>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<div id="future-of-medicine"></div>
+<section class="section bg-care-motion py-24 future-of-medicine">
+    <div class="container sm mx-auto text-center ">
+        <h2 class="text-4xl text-white grace-after">Accelerating the Future of Medicine for Everyone</h2>
+        <p class="mt-10 mb-4 text-white">We’re not just providing more patients with access to innovative care options, we’re transforming the healthcare industry.</p>
+        <p class="text-white">With the support of top pharmaceutical and biotech partners, we are scaling a new model for the clinical trial site, where more physicians and their own patients engage in cutting-edge research to develop and approve new therapies faster.</p>
+        <a href="#" class="btn">Our Mission</a>
+    </div>
+</section>
+
+{% endblock %}

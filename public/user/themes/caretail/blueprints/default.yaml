@@ -1,0 +1,156 @@
+title: Feature List
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+
+        featurelist:
+          type: tab
+          title: Contents
+
+          fields:
+
+            media_title:
+              type: section
+              title: Media
+              underline: true
+
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: true
+              preview_image: true
+
+            spacer1:
+              type: spacer
+              text: '<br>'
+            primary_section:
+              type: section
+              title: Primary Section
+              underline: true
+
+            header.primary_title:
+              type: text
+              label: Header Title
+              placeholder: e.g. Welcome to this page
+              validate:
+                required: true
+
+            header.primary_content:
+              type: textarea
+              rows: 10
+              label: Content
+              placeholder: "e.g. This is where all the page primary content should go.\n\r\n\rTo create paragraphs break the content in new lines."
+              validate:
+                required: true
+
+            header.main_image:
+              type: filepicker
+              label: Select Image
+              preview_image: true
+              folder: 'self@'
+              validate:
+                required: true
+
+            spacer2:
+              type: spacer
+              text: '<br>'
+            secondary_section:
+              type: section
+              title: Secondary Section
+              underline: true
+
+            header.secondary_title:
+              type: text
+              label: Header Title
+
+            header.secondary_content:
+              type: textarea
+              label: Content
+              rows: 5
+              placeholder: "e.g. This is where secondary section content goes.\n\r\n\rTo create paragraphs break the content in new lines."
+
+            spacer3:
+              type: spacer
+              text: '<br>'
+            sub_sections:
+              type: section
+              title: Sub-Sections (optional)
+              underline: true
+
+            header.subsections:
+              name: subsections
+              type: list
+              style: vertical
+              label: List of Sub-Sections
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                  validate:
+                    required: true
+                .content:
+                  type: textarea
+                  rows: 5
+                  label: Description (Content)
+                  placeholder: "e.g. This is where the content of  a feature should go.\n\r\n\rTo create paragraphs break the content in new lines."
+                  validate:
+                    required: true
+                .image:
+                  type: filepicker
+                  label: Select Image
+                  preview_image: true
+                  folder: 'self@'
+                  validate:
+                    required: true
+                .imageposition:
+                  type: toggle
+                  label: Image Position
+                  highlight: 1
+                  options:
+                    1: Left
+                    2: Right
+                  validate:
+                    type: int
+                    required: true
+
+            spacer4:
+              type: spacer
+              text: '<br>'
+            page_buttons:
+              type: section
+              title: Page Buttons (optional)
+              underline: true
+
+            header.page_buttons:
+              name: buttons
+              type: list
+              max: 3
+              style: vertical
+              label: List of Call-To-Action Buttons
+              fields:
+                .title:
+                  type: text
+                  label: Text
+                  placeholder: e.g. Contact Us
+                  validate:
+                    required: true
+                .url:
+                  type: url
+                  label: Button URL
+                  placeholder: e.g. https://careaccess.com/contact
+                  validate:
+                    required: true
+                .slogan:
+                  type: text
+                  label: Slogan
+                  placeholder: e.g. Schedule a consultation with us
+
+        security:
+          security:
+            admin:
+              super: true

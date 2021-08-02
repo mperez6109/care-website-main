@@ -1,0 +1,92 @@
+.generic-hero {
+  @apply mt-20 mb-24 flex justify-between py-12;
+
+  > div {
+    width: 48%;
+  }
+
+  h1 {
+    @apply text-care-motion pb-8 mb-8 relative;
+    &:after {
+      @apply block bg-care-grace absolute;
+      content: '';
+      height: 10px;
+      width: 40px;
+      bottom: 0px;
+    }
+  }
+
+  p {
+    @apply mb-6;
+  }
+}
+
+
+.section.generic-page {
+  .container {
+    @apply flex;
+  }
+  nav {
+    width: 25%;
+
+    .nav-title {
+      @apply text-care-boots pb-4 mb-4 relative;
+
+      &:after {
+        @apply block bg-care-grace absolute;
+        content: '';
+        height: 3px;
+        width: 20px;
+        bottom: 0px;
+      }
+    }
+
+    li {
+      @apply mb-4 text-lg;
+      a {
+        @apply text-care-motion;
+      }
+    }
+  }
+  .generic-page-content {
+    width: 70%;
+    margin-left: 2rem;
+
+    section {
+      @apply mb-8;
+
+      h3 {
+        @apply text-xl text-care-motion mb-4;
+      }
+
+      &.has-image {
+        display: flex;
+
+        > div:first-child {
+          width: 200px;
+
+          img {
+            width: 200px;
+            max-width: 200px;
+          }
+
+          + div {
+            margin-left: 40px;
+
+            ul {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      @apply flex bg-gray-100 p-8 mb-24;
+
+      > div:last-child {
+        width: 40%;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.about-us-hero {
+  @apply flex items-center text-center text-white;
+  background: url(/images/about-us/hero.jpeg) center center no-repeat;
+  background-size: cover;
+  padding: 8rem 0; }
+  .about-us-hero h1:after {
+    @apply bg-care-boots block;
+    content: '';
+    width: 1.875rem;
+    height: .1875rem;
+    margin: 1.25rem auto; }
+  .about-us-hero h2 {
+    @apply text-xl; }
+
+.about-us-page article {
+  @apply mb-8; }
+.about-us-page h3 {
+  @apply text-care-motion text-2xl mb-6; }
+
+/*# sourceMappingURL=about-us.css.map */

@@ -1,0 +1,59 @@
+title: Hero
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+            
+        hero:
+          type: tab
+          title: Contents
+
+          fields:
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: false 
+              preview_image: true
+
+            header.hero_title:
+              type: text
+              label: Hero Title
+              validate:
+                required: true
+
+            header.sub_hero_title:
+              type: text
+              label: Sub hero message
+              validate:
+                required: true    
+
+            header.hero_action:
+              type: text
+              label: Main Action Button Label
+              validate:
+                required: true
+
+            header.hero_action_url:
+              type: url
+              label: Main Action Button URL
+              validate:
+                required: true
+
+            header.hero_image:
+              type: filepicker
+              label: Select Hero Image
+              preview_image: true
+              folder: 'self@'
+              validate:
+                required: true
+        
+        security:
+          security:
+            admin:
+              super: true
+        
+        

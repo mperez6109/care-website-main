@@ -1,0 +1,19 @@
+state: enabled
+email: editor.test@careaccess.com
+fullname: 'Editor User'
+title: 'Site Editor'
+language: en
+content_editor: default
+twofa_enabled: false
+twofa_secret: OSK7UDHH75KHKPGB4XTCJNIP4GPWLLN6
+avatar: {  }
+hashed_password: $2y$10$PFMYRXEfSKf8j94nldph3.Q/.QvPP7ToyUBhe3xbWcXCsHA4SV886
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    configuration:
+      media: true
+    pages: true
+    statistics: true

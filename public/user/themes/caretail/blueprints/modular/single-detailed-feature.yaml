@@ -1,0 +1,77 @@
+title: Single Detailed Feature
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+            
+        feature:
+          type: tab
+          title: Contents
+
+          fields:
+
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: false 
+              preview_image: true
+
+            header.section_title:
+              type: text
+              label: Header Title
+              validate:
+                required: true
+
+            header.section_subtitle:
+              type: text
+              label: Sub-header Title
+              validate:
+                required: true
+
+            header.attributes:
+              name: attributes
+              type: list
+              style: vertical
+              label: Feature Attributes
+              validate:
+                required: true
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                  validate:
+                    required: true
+                .description:
+                  type: textarea
+                  label: Description
+                  validate:
+                    required: true
+
+            header.button_label:
+              type: text
+              label: Button Label
+              validate:
+                required: true
+
+            header.button_url:
+              type: url
+              label: Button URL
+              validate:
+                required: true
+
+            header.image:
+              type: filepicker
+              label: Select Feature Image
+              preview_image: true
+              folder: 'self@'
+              validate:
+                required: false
+
+        security:
+          security:
+            admin:
+              super: true

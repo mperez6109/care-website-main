@@ -1,0 +1,52 @@
+title: Single Large Image Section
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+            
+        singleimage:
+          type: tab
+          title: Contents
+
+          fields:
+
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: false 
+              preview_image: true
+              
+            header.section_title:
+              type: text
+              label: Section Title
+              validate:
+                required: true
+              
+            header.top_description:
+              type: textarea
+              label: Paragraph above image
+              validate:
+                required: true
+
+            header.image:
+              type: filepicker
+              label: Select Uploaded Image
+              preview_image: true
+              folder: 'self@'
+              validate:
+                required: true
+
+            header.bottom_description:
+              type: textarea
+              label: Paragraph below image
+              validate:
+                required: true
+        
+        security:
+          security:
+            admin:
+              super: true

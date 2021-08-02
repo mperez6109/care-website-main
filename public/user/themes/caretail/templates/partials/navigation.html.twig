@@ -1,0 +1,49 @@
+{% macro loop(page) %}
+    {% for p in page.children.visible %}
+        {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
+        {% if p.children.visible.count > 0 %}
+            <li class="has-children mr-3 {{ current_page }} group inline-flex hover:bg-gray-100 relative">
+                <a class="inline-block no-underline py-2 px-4 whitespace-nowrap">
+                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+                    {{ p.menu }}
+                </a>
+                <ul class="absolute hidden group-hover:block w-auto bg-white shadow-xl">
+                    {{ _self.loop(p) }}
+                </ul>
+            </li>
+        {% else %}
+            <li class="{{ current_page }} inline-flex no-underline py-2 px-4 hover:bg-gray-100">
+                <a href="{{ p.url }}" class="whitespace-nowrap">
+                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+                    {{ p.menu }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+<ul class="list-reset lg:flex justify-end flex-1 items-center">
+    {% if config.theme.dropdown.enabled %}
+        {{ _self.loop(pages) }}
+    {% else %}
+        {% for page in pages.children.visible %}
+            {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
+            {% if page.menu != "Home" %}
+                <li class="{{ current_page }} mr-3">
+                    <a href="{{ page.url }}" class="inline-block no-underline py-2 px-4 hover:bg-gray-100">
+                        {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                        {{ page.menu }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% for mitem in site.menu %}
+        <li mr-3>
+            <a href="{{ mitem.url }}" class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+                {{ mitem.text }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

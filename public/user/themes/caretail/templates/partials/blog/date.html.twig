@@ -1,0 +1,7 @@
+{% if page.publishdate %}
+    <span class="blog-date">
+        <time class="dt-published" datetime="{{ page.publishdate|date("c") }}">
+            <i class="fa fa-calendar"></i> {{ page.publishdate|date(system.pages.dateformat.short) }}
+        </time>
+    </span>
+{% endif %}

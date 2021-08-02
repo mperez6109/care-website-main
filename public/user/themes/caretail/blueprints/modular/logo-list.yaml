@@ -1,0 +1,51 @@
+title: Logo List
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+            
+        logolist:
+          type: tab
+          title: Contents
+
+          fields:
+
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: true 
+              preview_image: true
+
+            header.section_title:
+              type: text
+              label: Section Title
+              validate:
+                required: true
+
+            header.logos:
+              name: logos
+              type: list
+              style: vertical
+              label: Displayed Partners' Logos
+              fields:
+                .name:
+                  type: text
+                  label: Partner Name
+                  validate:
+                    required: true
+                .image:
+                  type: filepicker
+                  label: Select Logo
+                  preview_image: true
+                  folder: 'self@'
+                  validate:
+                    required: true
+        
+        security:
+          security:
+            admin:
+              super: true

@@ -1,0 +1,4 @@
+enabled: true
+blog-page: '/news'
+dropdown:
+  enabled: true

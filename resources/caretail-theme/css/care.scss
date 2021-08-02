@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+
+.notices{
+    @apply py-4;
+}
+.gt_color {
+    color : #0a0a0a;
+}
+code.language-markdown {
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+}
+.caretail_input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+.caretail_input:hover {
+    @apply outline-none;
+    @apply ring;
+}
+
+// unclassified html stuff
+@import 'base';
+
+// modules/components
+@import 'navigation';
+@import 'buttons';
+@import 'section';
+@import 'hr';
+@import 'footer';
+
+// pages
+@import 'home';
+@import 'decentralized-trials';
+@import 'generic'; // Sites on Demand, Select Our Sites, Physicians, Site Solutions
+@import 'careers';
+@import 'about-us';
+@import 'privacy-policy';
+@import 'covid-work';
+@import 'contact-us';
+@import 'locations';
+
+@tailwind utilities;

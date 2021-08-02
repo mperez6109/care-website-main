@@ -1,0 +1,29 @@
+/* NAVIGATION MODULE
+ ============================================================================================*/
+nav ul li {
+  line-height: 1;
+  /*background: #037E8C;
+  position: relative;*/ }
+  nav ul li a {
+    @apply text-care-dusk align-middle leading-none duration-300; }
+  nav ul li.has-children ul li {
+    display: block;
+    padding-left: 50px;
+    text-decoration: none;
+    transition: all 0.3s; }
+    nav ul li.has-children ul li a {
+      @apply py-2;
+      display: block; }
+@media (min-width: 640px) {
+  nav .header {
+    display: none;
+    background-color: blue; } }
+@media (min-width: 980px) {
+  nav .bricklayer-column-sizer {
+    width: 50%; } }
+nav header nav ul li {
+  display: block;
+  float: none;
+  border-bottom: white; }
+
+/*# sourceMappingURL=navigation.css.map */

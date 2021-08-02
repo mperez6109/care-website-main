@@ -1,0 +1,30 @@
+/* BUTTONS MODULE
+ ============================================================================================*/
+a.btn {
+  @apply rounded-full border-2 px-6 py-2 transition-all inline-block;
+  
+  &.primary {
+    @apply border-care-sunrise;
+
+    &:hover {
+      @apply text-white bg-care-sunrise;
+    }
+  }
+  &.green-border {
+    @apply border-care-motion;
+    
+    &:hover {
+      @apply bg-care-grace;
+    }
+  }
+}
+
+.button-row {
+  @apply my-4;
+  display: flex;
+  justify-content: center;
+
+  > .btn {
+    @apply mx-2;
+  }
+}

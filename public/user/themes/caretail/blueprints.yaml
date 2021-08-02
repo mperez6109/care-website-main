@@ -1,0 +1,39 @@
+name: Caretail
+version: 1.0.0
+description: Grav theme based on tailwindcss 2
+icon: mandalorian
+author:
+  name: care
+  email: a.muhameti@careaccess.com
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+      type: toggle
+      label: Dropdown in Menu
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    sitetitle:
+      type: text
+      label: Site title
+      size: medium
+    ga_id:
+      type: text
+      label: Google Analytics tag
+      size: small
+    company:
+      type: section
+      title: 'ABOUT COMPANY'
+      fields:
+        companyname:
+          type: text
+          label: Company name
+        companydata:
+          type: textarea
+          label: Company description

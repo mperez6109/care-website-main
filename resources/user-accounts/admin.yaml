@@ -1,0 +1,16 @@
+state: enabled
+email: admin.test@careaccess.com
+fullname: Admin
+title: Administrator
+language: en
+content_editor: default
+twofa_enabled: false
+twofa_secret: MJYORU652LSRFZW3YZ3DJDUGSB5NA6HM
+hashed_password: $2y$10$NJKWshMHXT2f6ACLyaRqmezPX9YJfL0hkP0WynrLmCFWI1g5rmaOy
+avatar: {  }
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: true

@@ -1,0 +1,20 @@
+title: 'Care Access'
+default_lang: en
+author:
+  name: 'Care Access'
+  email: info@careaccess.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Your Site Partner for Decentralized Clinical Trials'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects: null
+routes:
+  '/news/(\d{4})/(\d{1,2})/(\d{1,2})/(.*)': /news/$1-$2-$3-$4
+blog:
+  route: /blog

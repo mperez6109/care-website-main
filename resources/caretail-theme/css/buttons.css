@@ -1,0 +1,21 @@
+/* BUTTONS MODULE
+ ============================================================================================*/
+a.btn {
+  @apply rounded-full border-2 px-6 py-2 transition-all inline-block; }
+  a.btn.primary {
+    @apply border-care-sunrise; }
+    a.btn.primary:hover {
+      @apply text-white bg-care-sunrise; }
+  a.btn.green-border {
+    @apply border-care-motion; }
+    a.btn.green-border:hover {
+      @apply bg-care-grace; }
+
+.button-row {
+  @apply my-4;
+  display: flex;
+  justify-content: center; }
+  .button-row > .btn {
+    @apply mx-2; }
+
+/*# sourceMappingURL=buttons.css.map */

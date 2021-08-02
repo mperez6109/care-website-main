@@ -1,0 +1,63 @@
+title: Statistics
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+            
+        statistics:
+          type: tab
+          title: Contents
+
+          fields:
+
+            media_manage:
+              type: pagemedia
+              label: Add your icons here
+              preview_image: true
+              
+            header.section_title:
+              type: text
+              label: Statistics Title
+              validate:
+                required: true
+              
+            header.sub_title:
+              type: text
+              label: Sub-Title
+
+            header.statistics:
+              name: statistics
+              type: list
+              style: vertical
+              label: Statistical Numbers
+              min: 3
+              max: 3
+              fields:
+                .number:
+                  type: text
+                  label: Number
+                  validate:
+                    required: true
+                .description:
+                  type: text
+                  label: Description
+                  validate:
+                    required: true
+                .icon:
+                  type: filepicker
+                  label: Select Icon
+                  preview_image: true
+                  folder: 'self@'
+                  validate:
+                    required: true
+        
+        security:
+          security:
+            admin:
+              super: true
+        
+        

@@ -1,0 +1,31 @@
+footer#footer {
+  background: #19686b;
+
+  .container {
+    display: flex;
+
+    #footer-logo {
+      width: 25%;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    .wrapper {
+      width: 60%;
+      margin-left: 4rem;
+    }
+  }
+
+  .title {
+    @apply text-xl font-serif text-care-grace mb-4;
+  }
+
+  li {
+    @apply my-2;
+  }
+  a {
+    color: white;
+  }
+}

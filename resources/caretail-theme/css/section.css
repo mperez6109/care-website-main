@@ -1,0 +1,18 @@
+/* SECTIONS MODULE
+ ============================================================================================*/
+section.section {
+  position: relative; }
+  section.section .container {
+    position: relative;
+    max-width: 1180px;
+    z-index: 1; }
+    section.section .container.sm {
+      width: 80%;
+      max-width: 600px; }
+    section.section .container.md {
+      width: 80%;
+      max-width: 800px; }
+  section.section.bg-boots {
+    background: #19686b; }
+
+/*# sourceMappingURL=section.css.map */

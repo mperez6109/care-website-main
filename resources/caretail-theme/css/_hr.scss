@@ -1,0 +1,18 @@
+// HR-like pseudo elements
+// ============================================================
+.grace-after {
+  position: relative;
+
+  &:after {
+    content: '';
+    color: #abc9ba !important;
+    font-size: .9rem;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #abc9ba;
+    margin: 2.5rem auto 0;
+  }
+}
+

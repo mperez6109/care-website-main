@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,qCAAM;EACJ,uBAAuB;AAEzB,kBAAG;EACD,WAAW",
+"sources": ["_privacy-policy.scss"],
+"names": [],
+"file": "privacy-policy.css"
+}

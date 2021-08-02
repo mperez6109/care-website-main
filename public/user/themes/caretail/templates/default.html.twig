@@ -1,0 +1,24 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+
+{% block content %}
+<div style="min-height:60vh;">
+    <h1>{{ page.header.primary_title|raw }}</h1>
+    <p>{{ page.header.primary_content|nl2br }}</p>
+    <img src="{{ page.media[page.header.main_image].url }}">
+
+    {% if page.header.secondary_title %}
+        <h2>{{ page.header.secondary_title|raw }}</h2>
+    {% endif %}
+    {% if page.header.secondary_content %}
+        <p>{{ page.header.secondary_content|nl2br }}</p>
+    {% endif %}
+
+    {% for subsection in page.header.subsections %}
+        <h3>{{ subsection.title|raw }}</h3>
+        <p>{{ subsection.content|nl2br }}</p>
+        <img src="{{ page.media[subsection.image].url }}">
+    {% endfor %}
+</div>
+{% endblock %}

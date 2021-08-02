@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+{% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
+{% set show_pagination = header_var('show_pagination', [page, blog])|defined(true) %}
+
+{% block content %}
+    {% for child in collection %}
+        {% include 'partials/blog-list-post.html.twig' with {blog: page, page: child} %}
+    {% endfor %}
+
+    {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
+        <div id="listing-footer">
+            {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}
+        </div>
+    {% endif %}
+{% endblock %}

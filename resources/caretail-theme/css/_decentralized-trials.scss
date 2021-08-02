@@ -1,0 +1,79 @@
+.decentralized-trials {
+
+  &-hero {
+    background: url(/images/decentralized-trials/hero.png) center center no-repeat;
+    padding: 12rem 0px;
+    text-align: center;
+  }
+}
+
+.mobile-steps {
+  .grid > div {
+    position: relative;
+
+    @each $i in 1, 2, 3 {
+      &:nth-child(#{$i}):before {
+        content: '#{$i}';
+      }
+    }
+
+    &:before {
+      @apply bg-care-motion flex text-white text-2xl w-14 h-14 items-center justify-center border-4 border-white font-bold;
+      position: absolute;
+      line-height: 1;
+      border-radius: 100px;
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.section.features {
+  img {
+    width: 80px;
+  }
+}
+
+.dct-featured-article {
+  @apply flex mt-24;
+  > img, > div {
+    width: 50%;
+  }
+  > img {
+    margin: -2rem -1rem 1rem 0;
+  }
+  > div {
+    margin: 0 0 -1rem -1rem;
+  }
+}
+
+.dct-news {
+  .article-list {
+    @apply mt-24 mx-auto;
+    max-width: 800px;
+
+    a {
+      @apply block;
+      border-top: 1px solid #dadada;
+    }
+    article {
+      @apply flex py-4 items-start;
+    }
+    img {
+      width: 60px;
+      max-width: auto;
+      margin-right: 2rem;
+    }
+    div {
+      @apply flex flex-col justify-center;
+      height: 100%;
+    }
+    h2 {
+      @apply text-care-motion text-base;
+    }
+    p {
+      @apply text-sm;
+    }
+  }
+}

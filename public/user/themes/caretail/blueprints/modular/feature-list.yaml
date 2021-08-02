@@ -1,0 +1,106 @@
+title: Feature List
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+            
+        featurelist:
+          type: tab
+          title: Contents
+
+          fields:
+
+            media_manage:
+              type: pagemedia
+              label: Uploaded Images
+              multiple: true 
+              preview_image: true
+
+            header.section_title:
+              type: text
+              label: Header Title
+              validate:
+                required: true
+
+            header.section_subtitle:
+              type: text
+              label: Sub-header Title
+              validate:
+                required: true
+
+            header.features:
+              name: features
+              type: list
+              style: vertical
+              label: Features
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                  validate:
+                    required: true
+                .description:
+                  type: textarea
+                  label: Description
+                  validate:
+                    required: true
+                .more_label:
+                  type: text
+                  label: Read More Label
+                  validate:
+                    required: true
+                .feature_url:
+                  type: url
+                  label: Read More URL
+                  validate:
+                    required: true
+                .image:
+                  type: filepicker
+                  label: Select Image
+                  preview_image: true
+                  folder: 'self@'
+                  validate:
+                    required: true
+                .imageposition:
+                  type: toggle
+                  label: Image Position
+                  highlight: 1
+                  options:
+                    1: Left
+                    2: Right
+                  validate:
+                    type: int
+
+            header.call_to_action_title:
+              type: text
+              label: Call-to-action Title
+              validate:
+                required: true
+
+            header.call_to_action_subtitle:
+              type: text
+              label: Call-to-action Sub-Title
+              validate:
+                required: true
+
+            header.call_to_action_button_label:
+              type: text
+              label: Call-to-action Button Label
+              validate:
+                required: true
+
+            header.call_to_action_button_url:
+              type: url
+              label: Call-to-action Button URL
+              validate:
+                required: true
+
+
+        security:
+          security:
+            admin:
+              super: true

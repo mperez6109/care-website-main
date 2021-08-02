@@ -1,0 +1,36 @@
+name: Admincare
+slug: admincare
+type: plugin
+version: 0.1.0
+description: Overrides Grav Admin add page to add dates to blog post urls
+icon: plug
+author:
+  name: Arber Muhameti
+  email: a.muhameti@careaccess.com
+homepage: n/a
+demo: n/a
+keywords: grav, plugin, etc
+bugs: n/a
+docs: n/a
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_ADMINCARE.TEXT_VARIABLE
+      help: PLUGIN_ADMINCARE.TEXT_VARIABLE_HELP

@@ -1,0 +1,25 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<div class="blog-content-item grid pure-g-r">
+		<div id="item" class="block pure-u-2-3 h-entry">
+			<h1 class="p-name mt-1">{{ page.title }}</h1>
+			{% if page.header.subtitle %}
+				<h3>{{ page.header.subtitle }}</h3>
+			{% endif %}
+			{% include 'partials/blog/date.html.twig' %}
+			{% include 'partials/blog/taxonomy.html.twig' %}
+			{{ page.content|raw }}
+		</div>
+	</div>
+	<p class="prev-next text-center">
+		{% if not page.isLast %}
+			<a class="btn" href="{{ page.prevSibling.url }}"><i class="fa fa-angle-left"></i> Previous</a>
+		{% endif %}
+
+		{% if not page.isFirst %}
+			<a class="btn" href="{{ page.nextSibling.url }}">Next <i class="fa fa-angle-right"></i></a>
+		{% endif %}
+	</p>
+{% endblock %}
+

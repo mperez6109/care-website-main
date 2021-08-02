@@ -1,0 +1,37 @@
+.locations nav {
+  @apply mb-8; }
+  .locations nav .nav-title {
+    @apply text-care-boots pb-4 mb-4 relative; }
+    .locations nav .nav-title:after {
+      @apply block bg-care-grace absolute;
+      content: '';
+      height: 3px;
+      width: 20px;
+      bottom: 0px; }
+  .locations nav li {
+    @apply leading-8; }
+  .locations nav a {
+    @apply text-care-motion; }
+    .locations nav a:hover {
+      @apply underline; }
+.locations .location {
+  @apply bg-white; }
+  .locations .location-title {
+    @apply text-care-boots pb-4 mb-4 relative; }
+    .locations .location-title:before {
+      @apply block w-4 h-4 mb-2;
+      content: '';
+      background: url(/images/map-pin.svg) center center no-repeat;
+      background-size: 70%; }
+    .locations .location-title:after {
+      @apply block bg-care-grace absolute;
+      content: '';
+      height: 3px;
+      width: 20px;
+      bottom: 0px; }
+  .locations .location .expertise {
+    @apply mt-4; }
+    .locations .location .expertise li {
+      @apply inline-block mr-2 mb-2 py-1 px-2 rounded-full bg-gray-100 text-xs; }
+
+/*# sourceMappingURL=locations.css.map */

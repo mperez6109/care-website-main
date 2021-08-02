@@ -1,0 +1,370 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <section class="section locations my-20 pt-20">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-5 gap-4">
+                <div class="col-span-1">
+                <nav>
+                    <p class="nav-title">Locations by State</p>
+                    <ul>
+                        <li><a href="#">All Locations</a></li>
+                        <li><a href="#">Alabama</a></li>
+                        <li><a href="#">California</a></li>
+                        <li><a href="#">Florida</a></li>
+                        <li><a href="#">Georgia</a></li>
+                        <li><a href="#">Illinois</a></li>
+                        <li><a href="#">New Jersey</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">North Carolina</a></li>
+                        <li><a href="#">Ohio</a></li>
+                        <li><a href="#">Pennsylvania</a></li>
+                        <li><a href="#">Rhode Island</a></li>
+                        <li><a href="#">Utah</a></li>
+                        <li><a href="#">Virginia</a></li>
+                        <li><a href="#">Wyoming</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <p class="nav-title">Locations by Expertise</p>
+                    <ul>
+                        <li><a href="#">All Expertise</a></li>
+                        <li><a href="#">Dermatology</a></li>
+                        <li><a href="#">Diabetes</a></li>
+                        <li><a href="#">Endocrinology</a></li>
+                        <li><a href="#">Family Medicine</a></li>
+                        <li><a href="#">Gastroenterology</a></li>
+                        <li><a href="#">Infectious Disease</a></li>
+                        <li><a href="#">Internal Medicine</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Obstetrics & Gynecology</a></li>
+                        <li><a href="#">Opththalmology</a></li>
+                        <li><a href="#">Optometry</a></li>
+                        <li><a href="#">Pain Management</a></li>
+                        <li><a href="#">Psychiatry</a></li>
+                        <li><a href="#">Rheumatology</a></li>
+                        <li><a href="#">Sleep Disorders</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="col-span-4">
+                    <h1 class="text-care-motion text-3xl mb-4">Care Access locations</h1>
+                    <p class="mb-6">Our network is constantly growing. Don't see your therapeutic area in our list? Let us know what you need. We are activating new investigators regularly and would love to hear where your needs lie.</p>
+                    <div class="grid grid-cols-3 gap-4 p-4 bg-gray-100">
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Yonkers</h2>
+                            <ul>
+                                <li>469 North Broadway</li>
+                                <li>Yonkers, NY, 10701</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Scranton</h2>
+                            <ul>
+                                <li>201 Smallacombe Drive</li>
+                                <li>Scranton, PA, 18508</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Mountain Brook</h2>
+                            <ul>
+                                <li>2900 Cahaba Road</li>
+                                <li>Mountain Brook, AL, 35223</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Tuscaloosa</h2>
+                            <ul>
+                                <li>100 Rice Mine Road North</li>
+                                <li>Tuscaloosa, AL, 35406</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Orlando</h2>
+                            <ul>
+                                <li>10800 Dylan Loren Circle, Suite 102</li>
+                                <li>Orlando, FL, 32825</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                                <li>Internal Medicine</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Kinston</h2>
+                            <ul>
+                                <li>2541 North Queen Street</li>
+                                <li>Kinston, NC, 28501</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Lumberton</h2>
+                            <ul>
+                                <li>4348 Fayetteville Road</li>
+                                <li>Lumberton, NC, 28358</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                                <li>Infectious Disease</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Los Gatos</h2>
+                            <ul>
+                                <li>414901 National Avenue, Suite 101</li>
+                                <li>Los Gatos, CA 95032</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Chicago</h2>
+                            <ul>
+                                <li>2413 South State Street</li>
+                                <li>Chicago, IL, 60616</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Casper</h2>
+                            <ul>
+                                <li>1441 Wilkins Circle</li>
+                                <li>Casper, WY, 82601</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Bronx</h2>
+                            <ul>
+                                <li>3750 B. 3rd Avenue</li>
+                                <li>Bronx, NY 10456</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Family Medicine</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Rome</h2>
+                            <ul>
+                                <li>160 Three Rivers Drive</li>
+                                <li>Rome, GA, 30161</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">San Jose</h2>
+                            <ul>
+                                <li>4155 Moorpark Ave., Suite 3</li>
+                                <li>San Jose, CA 95117</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Hoboken</h2>
+                            <ul>
+                                <li>10 Church Towers, Suite 1</li>
+                                <li>Hoboken, NJ  07030</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Fairview Heights</h2>
+                            <ul>
+                                <li>5031 North Illinois Street, Suite 2</li>
+                                <li>Fairview Heights, IL, 62208</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Berkeley</h2>
+                            <ul>
+                                <li>2999 Regent St., Suite 701</li>
+                                <li>Berkeley, CA 94705</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Alexandria</h2>
+                            <ul>
+                                <li>1900 N. Beauregard St., Suite 110</li>
+                                <li> Alexandria, VA  22311</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Lillington</h2>
+                            <ul>
+                                <li>315 Pine State St.</li>
+                                <li>Lillington, NC 27546</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Optometry</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Brooklyn</h2>
+                            <ul>
+                                <li>666 Grand St.</li>
+                                <li>Brooklyn, NY 11211</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Diabetes</li>
+                                <li>Internal Medicine</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Youngstown</h2>
+                            <ul>
+                                <li>3304 Stones Throw Ave.</li>
+                                <li>Youngstown, OH 44514</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Pottsville</h2>
+                            <ul>
+                                <li>100 Schuylkill Medical Plaza, Suite 101</li>
+                                <li>Pottsville, PA, 17901</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                                <li>Obstetrics & Gynecology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Ogden</h2>
+                            <ul>
+                                <li>4403 Harrison Blvd., Suite 4410</li>
+                                <li>Ogden, UT 84403</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroente</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Walnut Creek</h2>
+                            <ul>
+                                <li>370 N Wiget Ln., Suite 125</li>
+                                <li>Walnut Creek, CA 94598</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Dermatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Huntington Beach</h2>
+                            <ul>
+                                <li>19582 Beach Blvd., Suite 320</li>
+                                <li>Huntington Beach, CA 92648</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Rheumatology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Warwick</h2>
+                            <ul>
+                                <li>215 Toll Gate Rd., Suite 309</li>
+                                <li>Warwick, RI 02886</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Diabetes</li>
+                                <li>Endocrinology</li>
+                                <li>Internal Medicine</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Santa Clarita</h2>
+                            <ul>
+                                <li>23928 Lyons Ave., Suite 110</li>
+                                <li>Santa Clarita, CA 91321</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Neurology</li>
+                                <li>Endocrinology</li>
+                                <li>Internal Medicine</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Downtown Pasadena</h2>
+                            <ul>
+                                <li>139 S Los Robles Ave., Suite B20</li>
+                                <li>Pasadena, CA 91101</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Neurology</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Pasadena</h2>
+                            <ul>
+                                <li>2810 E Del Mar Blvd., Suite 3</li>
+                                <li>Pasadena, CA 91107</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Psychiatry</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Beverly Hills</h2>
+                            <ul>
+                                <li>9777 Wilshire Blvd., Suite 807</li>
+                                <li> Beverly Hills, CA 90212</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Psychiatry</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="location p-6 shadow-lg block">
+                            <h2 class="location-title">Salt Lake City</h2>
+                            <ul>
+                                <li>1250 E 3900 S., Suite 302</li>
+                                <li>Salt Lake City, UT 84124</li>
+                            </ul>
+                            <ul class="expertise">
+                                <li>Gastroenterology</li>
+                                <li>Internal Medicine</li>
+                                <li>Opththalmology</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

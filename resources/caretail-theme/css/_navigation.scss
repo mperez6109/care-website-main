@@ -1,0 +1,49 @@
+/* NAVIGATION MODULE
+ ============================================================================================*/
+nav {
+
+  ul li {
+    line-height: 1;
+    /*background: #037E8C;
+    position: relative;*/
+
+    a {
+      @apply text-care-dusk align-middle leading-none duration-300;
+    }
+   
+    &.has-children ul li {
+      display: block;
+      padding-left: 50px;
+      text-decoration:none;
+      transition: all 0.3s;
+
+      
+      a {
+        @apply py-2;
+        display: block;
+
+
+      }
+    }
+  }
+
+  @media  (min-width: 640px) {
+     .header{
+       display: none;
+       background-color: blue;
+     }
+  }
+
+    @media (min-width: 980px) {
+    .bricklayer-column-sizer {
+        width: 50%;
+    }
+  }
+    header nav ul li{
+      display: block;
+      float:none ;
+      border-bottom:rgb(255,255,255);
+
+    }
+}
+

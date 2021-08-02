@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if(config.themes.caretail.ga_id !='') %}
+        {% include 'partials/ga.html.twig' %}
+    {% endif %}
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    {% block stylesheets %}
+        <!-- Font Awesome if you need it   -->
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+        <!--Replace with your tailwind.css once created-->
+        {% do assets.addCss('theme://css/care.css', 98) %}
+    {% endblock %}
+    {{ assets.css()|raw }}
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #0f3d42 0%, #009991 100%);
+        }
+        .focus\:green-shadow-outline:focus {
+            box-shadow: 0 0 0 3px rgba(136, 185, 23, 0.7);
+        }
+    </style>
+
+</head>
+<body class="leading-normal tracking-normal text-gray-800" style="font-family: 'Source Sans Pro', sans-serif;">
+
+    {% include 'partials/header.html.twig' %}
+
+    <div class="mt-20">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include 'partials/footer.html.twig' %}
+
+    {% block bottom %}
+        {% do assets.AddJs('theme://js/care.js') %}
+        {{ assets.js()|raw }}
+    {% endblock %}
+
+</body>
+</html>

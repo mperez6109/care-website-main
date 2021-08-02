@@ -1,0 +1,19 @@
+footer#footer {
+  background: #19686b; }
+  footer#footer .container {
+    display: flex; }
+    footer#footer .container #footer-logo {
+      width: 25%; }
+      footer#footer .container #footer-logo img {
+        width: 120px; }
+    footer#footer .container .wrapper {
+      width: 60%;
+      margin-left: 4rem; }
+  footer#footer .title {
+    @apply text-xl font-serif text-care-grace mb-4; }
+  footer#footer li {
+    @apply my-2; }
+  footer#footer a {
+    color: white; }
+
+/*# sourceMappingURL=footer.css.map */
